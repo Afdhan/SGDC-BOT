@@ -9,7 +9,7 @@ SIMPLE WHATSAPP BOT GRETONGERS
 
  # MUHAMMAD AFDHAN
 YouTube
-[`SGDC`](https://www.youtube.com/channel/UCpx5nDQcdVpqrQBUfMLuloA)
+[`SGDC Project`](https://www.youtube.com/channel/UCpx5nDQcdVpqrQBUfMLuloA)
 
 Instagram
 [`@dhans11__`](https://instagram.com/dhans11__)
