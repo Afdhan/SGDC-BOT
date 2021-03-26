@@ -12,7 +12,7 @@ YT
 [`SGDC`](https://www.youtube.com/channel/UCpx5nDQcdVpqrQBUfMLuloA)
 
 Contact 
-[`WhatsApp`](https://wa.me/6282252655313&send?text=Bang+saya+mau+donasi)
+[`WhatsApp`](https://wa.me/6282252655313&send?text=Bang+saya+mau+donasi,+5k+via+dana..+boleh+minta+nomor+dananya+bang?)
 
 Donate
 [`Saweria`](https://saweria.co/AFD11)
