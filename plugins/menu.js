@@ -31,7 +31,7 @@ let handler  = async (m, { conn, args, usedPrefix: _p }) => {
 *┃║ Time :          ${time}*
 *┃║ Uptime :      ${uptime}*
 *┃║ Version :     1.5.1*
-*┃║ Prefix :       《${_p} 》*
+*┃║ Prefix :        《${_p}》*
 *┃╰═════════════════╯*
 *┃                  MENU ON SGDC-BOT*
 *┃╭═════════════════╮*
