@@ -8,7 +8,7 @@ let handler = async(m, { conn, text }) => {
  //   let hasil = `${res.data.result}`
 //conn.reply(m.chat, hasil, m)
 m.reply('*FITUR NONAKTIF*')
-	})
+	
 }
 handler.command = /^(komiku)$/i
 handler.owner = false
