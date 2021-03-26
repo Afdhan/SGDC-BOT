@@ -1,12 +1,11 @@
-const { MessageType } = require('@adiwajshing/baileys')
+let linkRegex = /chat.whatsapp.com\/([0-9A-Za-z]{20,24})/i
 
-let handler = async(m, { conn, args, text }) => {
-   if(!text) return conn.reply(m.chat, 'Masukkan link undangan grup!', m)
-    var nomor = m.sender
-    const teks1 = `*[ UNDANGAN GROUP ]*\n*DARI:* wa.me/${nomor.split("@s.whatsapp.net")[0]}\n*LINK:* ${text}`
-    conn.sendMessage('6282252655313@s.whatsapp.net', teks1, MessageType.text)
-    conn.reply(m.chat, '_Mengirim Permintaan Ke Owner.._\n\n*BOT akan join ketika permintaan telah dikonfirmasi oleh Owner!*', m)
-  }
+let handler = async (m, { conn, text }) => {
+    let [_, code] = text.match(linkRegex) || []
+    if (!code) throw '_Link invalid!_'
+    let res = await conn.acceptInvite(code)
+    m.reply(`Berhasil join grup ${res.gid}`)
+}
 handler.command = /^(join(gc)?)$/i
 handler.owner = false
 handler.mods = false
