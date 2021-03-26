@@ -10,10 +10,12 @@ SIMPLE WHATSAPP BOT GRETONGERS
  # MUHAMMAD AFDHAN
 YT 
 [`SGDC`](https://www.youtube.com/channel/UCpx5nDQcdVpqrQBUfMLuloA)
+
 Contact 
 [`WhatsApp`](https://wa.me/6282253655313&send?text=Bang+saya+mau+donasi)
+
 Donate
 [`Saweria`](https://saweria.co/AFD11)
 [`Nyawer`](https://nyawer.co/SGDC)
 
-Original Script [`Nurutomo`](https://github.com/Nurutomo/wabot-aq)
+Original Script [`Klik Disini`](https://github.com/Nurutomo/wabot-aq)
