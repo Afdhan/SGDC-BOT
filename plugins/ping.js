@@ -3,19 +3,7 @@ let handler = async(m, { conn, text }) => {
 
 	await m.reply('_Testing Ping..._')
 	axios.get(`https://api.zeks.xyz/api`).then ((res) => {
-	 	let hasil = `
-*[ BOT STATUS ]*
-
-Status: ${pickRandom(['Fine','Fine','Fine','Fine','Fine','Fine','Fine','Bad','Not Good','Not Good','Fine','Updated','Updated','Fine','Fine'])}
-Ram: ${res.data.RAM}
-CPU: ${res.data.CPU}
-Online: ${res.data.UPTIME}
-Status Charging: ${pickRandom(['false','false','false','true','true','true','false','false','true','false','null'])}
-Connection: ${pickRandom(['4G','3G','4G','4G','4G','4G','3G','H+','H+','3G','4G','H','H+','H','3G','E','null'])}
-Ping: ${res.data.SPEED}`
-
-*[ • SGDC-BOT • ]*
-`.trim()
+	 	let hasil = `*[ BOT STATUS ]*\n\nStatus: ${pickRandom(['Fine','Fine','Fine','Fine','Fine','Fine','Fine','Bad','Not Good','Not Good','Fine','Updated','Updated','Fine','Fine'])}\nRam: ${res.data.RAM}\nCPU: ${res.data.CPU}\nOnline: ${res.data.UPTIME}\nStatus Charging: ${pickRandom(['false','false','false','true','true','true','false','false','true','false','null'])}\nConnection: ${pickRandom(['4G','3G','4G','4G','4G','4G','3G','H+','H+','3G','4G','H','H+','H','3G','E','null'])}\nPing: ${res.data.SPEED}\n\n*[ • SGDC-BOT • ]*`
     conn.reply(m.chat, hasil, m)
 	})
 }
