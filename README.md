@@ -8,8 +8,11 @@ SIMPLE WHATSAPP BOT GRETONGERS
 [`Channel`](https://t.me/SobatGretong)
 
  # MUHAMMAD AFDHAN
-YT 
+YouTube
 [`SGDC`](https://www.youtube.com/channel/UCpx5nDQcdVpqrQBUfMLuloA)
+
+Instagram
+[`@dhans11__`](https://instagram.com/dhans11__)
 
 Contact 
 [`WhatsApp`](https://wa.me/6282252655313&send?text=Bang+saya+mau+donasi,+5k+via+dana..+boleh+minta+nomor+dananya+bang?)
