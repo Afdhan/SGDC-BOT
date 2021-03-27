@@ -174,6 +174,7 @@ let handler  = async (m, { conn, args, usedPrefix: _p }) => {
 *┃║ ${_p}addprem* _@user_
 *┃║ ${_p}delprem* _@user_
 *┃║ ${_p}getpp* _@user_
+*┃║ ${_p}spam* _@user_
 *┃║ ${_p}jadwalsholat* _Daerah_
 *┃║ ${_p}waktu* _Daerah_
 *┃║ ${_p}ninja* _Nama_
