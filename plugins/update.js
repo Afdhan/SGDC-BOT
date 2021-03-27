@@ -1,6 +1,6 @@
 let { execSync } = require('child_process')
 let handler = async (m, { conn, text }) => {
- await m.reply('*_Memulai Ulang BOT..._*')
+ await m.reply('*_Sedang Merestart BOT..._*')
   if (global.conn.user.jid == conn.user.jid) {
  // conn.reply(m.chat, '*_Memulai Ulang BOT..._*', m)
     let stdout = execSync('git pull' + (m.fromMe && text ? ' ' + text : ''))
