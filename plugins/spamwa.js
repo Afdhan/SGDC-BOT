@@ -7,8 +7,8 @@ let [nmr, psn] = text.split `|`
     if (!psn) return conn.reply(m.chat, 'Silahkan masukan pesannya', m)
     if (text > 500) return conn.reply(m.chat, 'Teks Kepanjangan!', m)
 
-    //let kr = `${nmr}`
-    let kr = `${nmr}` || m.mentionedJid[0].split("@s.whatsapp.net")[0]
+    var kn = m.mentionedJid[0]
+    let kr = /*`${nmr}` ||*/ kn.split("@s.whatsapp.net")[0]
     var nomr = m.sender
     let ss = `*「 WhatsApp Spammer 」*\n\n*Dari:* wa.me/${nomr.split("@s.whatsapp.net")[0]}\n*Pesan:* ${psn}\n\n*[ • SGDC-BOT • ]*`
     let sn = `*「 WhatsApp Spammer 」*\n\n*Dari:* wa.me/${nomr.split("@s.whatsapp.net")[0]}\n*Pesan:* ${psn}\n\n*[ • SGDC-BOT • ]*`
