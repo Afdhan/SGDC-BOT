@@ -13,7 +13,7 @@ let handler = async(m, { conn, text }) => {
 handler.command = /^(alay)$/i
 handler.owner = false
 handler.mods = false
-handler.premium = false
+handler.premium = true
 handler.group = false
 handler.private = false
 
