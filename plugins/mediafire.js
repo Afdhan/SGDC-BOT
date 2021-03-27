@@ -17,7 +17,7 @@ _Download sendiri, jangan manja:v_
 await m.reply(hasil)*/
 
 	
-let file = await conn.download(res.data.result.download)
+let file = await conn.downloadM(res.data.result.download)
 conn.sendFile(m.chat, file, `${res.data.result.filename}`, m)
    })
 }
