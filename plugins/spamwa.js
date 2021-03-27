@@ -10,8 +10,8 @@ let [nmr, psn] = text.split `|`
     let kr = `${nmr}`
  //   var nmor = m.mentionedJid[0]
     var nomr = m.sender
-    let s1 = `*「 WhatsApp Spammer 」*\n\n*Dari:* wa.me/${nomr.split("@s.whatsapp.net")[0]}\n*Pesan:* ${psn}\n\n*[ • SGDC-BOT • ]*`
-    let s2 = `*「 WhatsApp Spammer 」*\n\n*Dari:* wa.me/${nomr.split("@s.whatsapp.net")[0]}\n*Pesan:* ${psn}\n\n*[ • SGDC-BOT • ]*`
+    let ss = `*「 WhatsApp Spammer 」*\n\n*Dari:* wa.me/${nomr.split("@s.whatsapp.net")[0]}\n*Pesan:* ${psn}\n\n*[ • SGDC-BOT • ]*`
+    let sn = `*「 WhatsApp Spammer 」*\n\n*Dari:* wa.me/${nomr.split("@s.whatsapp.net")[0]}\n*Pesan:* ${psn}\n\n*[ • SGDC-BOT • ]*`
     let s3 = `*「 WhatsApp Spammer 」*\n\n*Dari:* wa.me/${nomr.split("@s.whatsapp.net")[0]}\n*Pesan:* ${psn}\n\n*[ • SGDC-BOT • ]*`
     let s4 = `*「 WhatsApp Spammer 」*\n\n*Dari:* wa.me/${nomr.split("@s.whatsapp.net")[0]}\n*Pesan:* ${psn}\n\n*[ • SGDC-BOT • ]*`
     let s5 = `*「 WhatsApp Spammer 」*\n\n*Dari:* wa.me/${nomr.split("@s.whatsapp.net")[0]}\n*Pesan:* ${psn}\n\n*[ • SGDC-BOT • ]*`
@@ -26,8 +26,8 @@ let [nmr, psn] = text.split `|`
     let s14 = `*「 WhatsApp Spammer 」*\n\n*Dari:* wa.me/${nomr.split("@s.whatsapp.net")[0]}\n*Pesan:* ${psn}\n\n*[ • SGDC-BOT • ]*`
     let s15 = `*「 WhatsApp Spammer 」*\n\n*Dari:* wa.me/${nomr.split("@s.whatsapp.net")[0]}\n*Pesan:* ${psn}\n\n*[ • SGDC-BOT • ]*`
 
-   // conn.sendMessage(kr + '@s.whatsapp.net', s1, MessageType.text)                                                                                                                                                                                                          conn.sendMessage(korban + '@s.whatsapp.net', spam2, MessageType.text)
-   // conn.sendMessage(kr + '@s.whatsapp.net', s2, MessageType.text)
+    conn.sendMessage(kr + '@s.whatsapp.net', ss, MessageType.text)                                                                                                                                                                                                          conn.sendMessage(korban + '@s.whatsapp.net', spam2, MessageType.text)
+    conn.sendMessage(kr + '@s.whatsapp.net', sn, MessageType.text)
     conn.sendMessage(kr + '@s.whatsapp.net', s3, MessageType.text)
     conn.sendMessage(kr + '@s.whatsapp.net', s4, MessageType.text)
     conn.sendMessage(kr + '@s.whatsapp.net', s5, MessageType.text)
