@@ -15,7 +15,10 @@ _Download sendiri, jangan manja:v_
 *[ • SGDC-BOT • ]*
 `.trim()
 await m.reply(hasil)*/
-conn.sendFile(m.chat, res.data.result.download, `$res.data.result.filename}`, m)
+
+	
+let file = await conn.download(res.data.result.download)
+conn.sendFile(m.chat, file, `${res.data.result.filename}`, m)
    })
 }
 handler.command = /^(mediafire)$/i
