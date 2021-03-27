@@ -1,7 +1,7 @@
 const { MessageType } = require('@adiwajshing/baileys')
 
 let handler = async(m, { conn, text }) => {
-let [nmr, psn] = text.split `|`
+let [nmr, psn] = text.split(' ')
 
     if (!nmr) return conn.reply(m.chat, 'Siapa yang mau di spam?', m)
     if (!psn) return conn.reply(m.chat, 'Silahkan masukan teks pesan', m)
