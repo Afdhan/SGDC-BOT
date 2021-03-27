@@ -1,13 +1,6 @@
-global.owner = ['6283159600193']
-global.mods = []
-global.prems = []
-global.APIs = { 
-  nrtm: 'https://nurutomo.herokuapp.com',
-  xteam: 'https://api.xteam.xyz'
-}
-global.APIKeys = {
-  'https://api.xteam.xyz': 'd90a9e986e18778b'
-}
+global.owner = ['6282252655313']
+global.mods = ['6282252655313']
+global.prems = ['6282252655313']
 global.packname = 'ŠĞĎČ-BØŤ'
 global.author = 'M AFDHAN'
 
