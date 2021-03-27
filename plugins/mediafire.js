@@ -4,7 +4,7 @@ let handler = async(m, { conn, text }) => {
     if (!text) return conn.reply(m.chat, 'Silahkan masukan link mediafire', m)
 
   await m.reply('*[ WAIT ]* _Sedang Diproses..._')
-axios.get(`https://videfikri.com/api/mediafire/?query=${text}`).then((res) => {
+axios.get(`https://videfikri.com/api/mediafire/?query=${text}`).then((res) => {/*
 	let hasil = `
 *FileName:* ${res.data.result.filename}
 *Size:* ${res.data.result.size}
@@ -14,7 +14,7 @@ axios.get(`https://videfikri.com/api/mediafire/?query=${text}`).then((res) => {
 _Download sendiri, jangan manja:v_
 *[ • SGDC-BOT • ]*
 `.trim()
-await m.reply(hasil)
+await m.reply(hasil)*/
 conn.sendFile(m.chat, res.data.result.download, '', m)
    })
 }
