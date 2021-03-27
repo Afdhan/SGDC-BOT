@@ -5,7 +5,7 @@ let handler = async (m, { conn, text }) => {
  // conn.reply(m.chat, '*_Memulai Ulang BOT..._*', m)
     let stdout = execSync('git pull' + (m.fromMe && text ? ' ' + text : ''))
     require('fs').readdirSync('plugins').map(v=>global.reload('', v))
-    conn.reply(m.chat, stdout.toString(), m)
+    conn.reply(m.chat, stdout.toString() + '\n\n*[ • SGDC-BOT • ]*', m)
    }
 }
 
