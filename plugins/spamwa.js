@@ -26,7 +26,6 @@ let [nmr, psn] = text.split `|`
     let s14 = `*「 WhatsApp Spammer 」*\n\n*Dari:* wa.me/${nomr.split("@s.whatsapp.net")[0]}\n*Pesan:* ${psn}\n\n*[ • SGDC-BOT • ]*`
     let s15 = `*「 WhatsApp Spammer 」*\n\n*Dari:* wa.me/${nomr.split("@s.whatsapp.net")[0]}\n*Pesan:* ${psn}\n\n*[ • SGDC-BOT • ]*`
 
-
     conn.sendMessage(kr + '@s.whatsapp.net', s1, MessageType.text)                                                                                                                                                                                                          conn.sendMessage(korban + '@s.whatsapp.net', spam2, MessageType.text)
     conn.sendMessage(kr + '@s.whatsapp.net', s2, MessageType.text)
     conn.sendMessage(kr + '@s.whatsapp.net', s3, MessageType.text)
