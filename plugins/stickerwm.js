@@ -42,8 +42,8 @@ let handler  = async (m, { conn, args }) => {
       if (!img) throw 'Gagal!'
 
 
-      /*stiker = await sticker(img, false, pkg, wm)
-    } else*/ if (args[0]) stiker = await sticker(false, args[0], pkg, wm)
+      stiker = await sticker(img, false, global.packname, global.author)
+    } else if (args[0]) stiker = await sticker(false, args[0], global.packname, global.author)
   } finally {
     if (stiker) conn.sendMessage(m.chat, stiker, MessageType.sticker, {
       quoted: m
