@@ -3,12 +3,12 @@ const { MessageType } = require('@adiwajshing/baileys')
 let handler = async(m, { conn, text }) => {
 let [nmr, psn] = text.split `|`
 
-    if (!nmr) return conn.reply(m.chat, 'Silahkan masukan nomor whatsapp yang ingin dispam', m)
+    if (!nmr) return conn.reply(m.chat, 'Siapa yang mau dispam?', m)
     if (!psn) return conn.reply(m.chat, 'Silahkan masukan pesannya', m)
     if (text > 500) return conn.reply(m.chat, 'Teks Kepanjangan!', m)
 
     var kn = m.mentionedJid[0]
-    let kr = `${nmr}` || kn.split("@s.whatsapp.net")[0]
+    let kr = /*`${nmr}` ||*/ kn.split("@s.whatsapp.net")[0]
     var nomr = m.sender
     let ss = `*「 WhatsApp Spammer 」*\n\n*Dari:* wa.me/${nomr.split("@s.whatsapp.net")[0]}\n*Pesan:* ${psn}\n\n*[ • SGDC-BOT • ]*`
     let sn = `*「 WhatsApp Spammer 」*\n\n*Dari:* wa.me/${nomr.split("@s.whatsapp.net")[0]}\n*Pesan:* ${psn}\n\n*[ • SGDC-BOT • ]*`
@@ -49,10 +49,10 @@ let [nmr, psn] = text.split `|`
 }
 
 handler.command = /^(spam|spamwa)$/i
-handler.owner = false
+handler.owner = true
 handler.mods = false
 handler.premium = false
-handler.group = false
+handler.group = true
 handler.private = false
 
 handler.admin = false
