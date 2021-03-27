@@ -33,9 +33,9 @@ let handler  = async (m, { conn, args }) => {
     im.stdin.write(sticker)
     im.stdin.end()
     im.on('exit', () => {
-  let stiker = false
+/*  let stiker = false
   try {
-/*    let q = Buffer.concat(bufs)
+   let q = Buffer.concat(bufs)
        let mime = (q.msg || q).mimetype || ''
     if (/image|video/.test(mime)) {*/
       let img = Buffer.concat(bufs)
