@@ -201,8 +201,8 @@ let handler  = async (m, { conn, args, usedPrefix: _p }) => {
 *┃                    [ • SGDC-BOT • ]*
 *┗━━━━━━━━━━━━━━━━━━━┛*
 `.trim()
- await conn.fakeReply(m.chat, img, 'SGDC-BOT.jpg', 'SGDC-BOT', '0@s.whatsapp..net', mn, m)
-  m.reply('Untuk Menu Gretongan, Ketik *!gretongmenu*')
+ await conn.sendFile(m.chat, img, 'SGDC-BOT.jpg', mn, m)
+  conn.fakeReply(m.chat, 'SGDC-BOT', '0@s.whatsapp.net', 'Untuk Menu Gretongan, Ketik *!gretongmenu*')
 }
 
 handler.command = /^(menu|help|helep)$/i
