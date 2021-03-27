@@ -14,7 +14,7 @@ axios.get(`https://videfikri.com/api/mediafire/?query=${text}`).then((res) => {
 _Download sendiri, jangan manja:v_
 *[ • SGDC-BOT • ]*
 `.trim()
-await conn.reply(m.chat, hasil, m)
+await m.reply(hasil)
 conn.sendFile(m.chat, res.data.result.download, '', m)
    })
 }
