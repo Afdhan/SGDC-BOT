@@ -43,7 +43,7 @@ let handler  = async (m, { conn, args }) => {
 
 
       stiker = await sticker(img, false, pkg, wm)
-    } else if (args[0]) stiker = await sticker(false, args[0], pkg, wm)
+    //} else if (args[0]) stiker = await sticker(false, args[0], pkg, wm)
   } finally {
     if (stiker) conn.sendMessage(m.chat, stiker, MessageType.sticker, {
       quoted: m
