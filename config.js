@@ -3,7 +3,13 @@ global.mods = ['6282252655313']
 global.prems = ['6282252655313']
 global.packname = 'ŠĞĎČ-BØŤ'
 global.author = 'M AFDHAN'
-
+global.APIs = { 
+  nrtm: 'https://nurutomo.herokuapp.com',
+  xteam: 'https://api.xteam.xyz'
+}
+global.APIKeys = {
+  'https://api.xteam.xyz': 'd90a9e986e18778b'
+}
 
 
 let fs = require('fs')
