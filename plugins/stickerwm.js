@@ -33,7 +33,7 @@ let handler  = async (m, { conn, args }) => {
     im.stdin.write(sticker)
     im.stdin.end()
     im.on('exit', () => {
-  let stiker = false
+/*  let stiker = false
   try {
    /*let q = Buffer.concat(bufs)
        let mime = (q.msg || q).mimetype || ''
@@ -42,9 +42,9 @@ let handler  = async (m, { conn, args }) => {
       //if (!img) throw 'Gagal!'
 
 
-      stiker = await sticker(Buffer.concat(bufs), false, global.packname, global.author)
-    } else if (args[0]) stiker = await sticker(false, args[0], global.packname, global.author)
-  } finally {
+      let stiker = await sticker(Buffer.concat(bufs), false, global.packname, global.author)
+    /*} else if (args[0]) stiker = await sticker(false, args[0], global.packname, global.author)
+ */ } finally {
     if (stiker) conn.sendMessage(m.chat, stiker, MessageType.sticker, {
       quoted: m
     })
