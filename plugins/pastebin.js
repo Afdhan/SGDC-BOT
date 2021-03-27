@@ -3,7 +3,7 @@ let handler = async(m, { conn, text }) => {
 
     if (!text) return conn.reply(m.chat, 'Silahkan masukan teks', m)
 
-axios.get(`https://lindow-api.herokuapp.com/api/pastebin?query=${text}`).then((res) => {
+axios.get(`https://api-anoncybfakeplayer.herokuapp.com/pastebin?text=${text}`).then((res) => {
     let hasil = `
 *Teks:* ${text}
 *Link:* ${res.data.result}
