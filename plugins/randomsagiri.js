@@ -7,7 +7,7 @@ let link = 'http://lolhuman.herokuapp.com/api/random/sagiri?apikey=761e676c13e77
 conn.sendFile(m.chat, link, 'SGDC-BOT.png', 'No Colay:v\n\n*[ • SGDC-BOT • ]*', m)
 }
 
-handler.command = /^(loli|randomloli)$/i
+handler.command = /^(sagiri|randomsagiri)$/i
 handler.owner = false
 handler.mods = false
 handler.premium = true
