@@ -198,7 +198,7 @@ let handler  = async (m, { conn, args, usedPrefix: _p }) => {
 *╭━━━━━━━━━━━━━━━━━━═╮*
 *_INFO_*
 
-*_Ingin Jadi User Premium?
+*_Ingin Jadi User Premium?_*
 *Chat WhatsApp: wa.me/6282252655313*
 *Kirim Nomer Buat Verifikasi!*
 
