@@ -17,6 +17,7 @@ axios.get(`https://api.xteam.xyz/cuaca?kota=${text}&APIKEY=abba3220ce4a347f`).th
 
 
 *[ • SGDC-BOT • ]*
+`.trim()
 conn.reply(m.chat, hasil, m)
 	})
 }
