@@ -25,7 +25,7 @@ let handler = async(m, { conn, args, usedPrefix }) => {
 handler.command = /^(anime)$/i
 handler.owner = false
 handler.mods = false
-handler.premium = false
+handler.premium = true
 handler.group = false
 handler.private = false
 
