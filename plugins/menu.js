@@ -23,6 +23,15 @@ let handler  = async (m, { conn, args, usedPrefix: _p }) => {
     let uptime = clockString(_uptime)
     let img ='src/SGDC_BOT.jpg'
     let mn = `
+*╭━━━━━━━━━━━━━━━━━━═╮*
+*_INFO_*
+
+*_Ingin Jadi User Premium?_*
+*Chat WhatsApp: wa.me/6282252655313*
+*Kirim Nomer Buat Verifikasi!*
+
+*_Donate:_*
+*Saweria: https://saweria.co/AFD11*
 *┏━━━━━━━━━━━━━━━━━━━┓*
 *┃                      [ • SGDC-BOT • ]*
 *┃╭═════════════════╮*
@@ -196,15 +205,6 @@ let handler  = async (m, { conn, args, usedPrefix: _p }) => {
 *┃╰═════════════════╯*
 *┃                    [ • SGDC-BOT • ]*
 *┗━━━━━━━━━━━━━━━━━━━┛*
-*╭━━━━━━━━━━━━━━━━━━═╮*
-*_INFO_*
-
-*_Ingin Jadi User Premium?_*
-*Chat WhatsApp: wa.me/6282252655313*
-*Kirim Nomer Buat Verifikasi!*
-
-*_Donate:_*
-*Saweria: https://saweria.co/AFD11*
 `.trim()
  await conn.sendFile(m.chat, img, 'SGDC-BOT.jpg', mn, m)
   m.reply('Untuk Menu Gretongan, Ketik *!gretongmenu*')
