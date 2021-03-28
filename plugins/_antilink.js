@@ -13,9 +13,7 @@ if (chat.antiLink) conn.reply(m.chat, `*「 ANTI LINK 」*\n\nTerdeteksi *${usna
 handler.customPrefix = /chat.whatsapp.com\/([0-9A-Za-z]{20,24})/i
 handler.command = new RegExp
 handler.group = true
-
 handler.admin = false
-handler.botAdmin = true
 
 handler.fail = null
 
