@@ -5,8 +5,8 @@ const fetch = require('node-fetch')
 const FormData = require('form-data')
 const { MessageType } = require('@adiwajshing/baileys')
 let handler = async(m, { conn, text }) => {
-  let stiker = false
-  try {
+ /* let stiker = false
+  try {*/
 await m.reply('*[ WAIT ]* _Sedang Diproses..._')
 
         let url = 'https://api.xteam.xyz/sticker/stickerly?q=' + text + '&APIKEY=abba3220ce4a347f'
@@ -19,10 +19,10 @@ axios.get(url)
             (response) => {
 	let buf = Buffer.from(response, 'base64')
 	
-    stiker = await sticker(buf, false, global.packname, global.author)
+   // stiker = await sticker(buf, false, global.packname, global.author)
 // let spn = encodeURIComponent(buf)
-  } finally {
-    if (stiker) conn.sendMessage(m.chat, stiker, MessageType.sticker, {
+  //} finally {
+   /* if (stiker)*/ conn.sendMessage(m.chat, buf, MessageType.sticker, {
       quoted: m
     })
    else throw '*Kesalahan Pada Saat Mengonversi!*'
