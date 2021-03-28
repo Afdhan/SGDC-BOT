@@ -1,6 +1,6 @@
 global.owner = ['6282252655313']
 global.mods = ['6282252655313']
-global.prems = ['6282252655313']
+global.prems = ['6282252655313','6283122891105']
 global.packname = 'ŠĞĎČ-BØŤ'
 global.author = 'M AFDHAN'
 global.APIs = { 
