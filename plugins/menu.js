@@ -96,7 +96,10 @@ let handler  = async (m, { conn, args, usedPrefix: _p }) => {
 *┃║ ${_p}run* _Teks_
 *┃║ ${_p}say* _Teks_
 *┃║ ${_p}ttp* _Teks_
+*┃║ ${_p}ttp2* _Teks_
+*┃║ ${_p}ttp3* _Teks_
 *┃║ ${_p}attp* _Teks_
+*┃║ ${_p}attp2* _Teks_
 *┃║ ${_p}style* _Teks_
 *┃║ ${_p}tahta* _Teks_
 *┃║ ${_p}tahta2* _Teks_
