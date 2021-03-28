@@ -4,6 +4,7 @@ global.prems = [
 '6282252655313',
 '6283122891105',
 '6283846956950',
+'6283896033428',
 ]
 global.packname = 'ŠĞĎČ-BØŤ'
 global.author = 'M AFDHAN'
