@@ -107,5 +107,3 @@ module.exports = handler
 const getRandom = (ext) => {
   return `${Math.floor(Math.random() * 10000)}${ext}`
 }
-    "remove.bg": "^1.3.0",
-    "fluent-ffmpeg": "^2.1.2",
