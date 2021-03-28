@@ -9,9 +9,7 @@ let handler = async(m, { conn, text }) => {
   try {*/
 await m.reply('*[ WAIT ]* _Sedang Diproses..._')
 
-        let url = 'https://api.xteam.xyz/sticker/stickerly?q=' + text + '&APIKEY=abba3220ce4a347f'
-axios.get(url)
-      .then((res) => {
+        axios.get(`https://api.xteam.xyz/sticker/stickerly?q=${text}&APIKEY=abba3220ce4a347f`).then((res) => {
         let b = JSON.parse(JSON.stringify(res.data.result.stickerlist));
         let cc =  b[Math.floor(Math.random() * b.length)];
         imageToBase64(cc)
@@ -22,13 +20,18 @@ axios.get(url)
    // stiker = await sticker(buf, false, global.packname, global.author)
 // let spn = encodeURIComponent(buf)
   //} finally {
-   /* if (stiker)*/ conn.sendMessage(m.chat, buf, MessageType.sticker, {
-      quoted: m
-     })
+   /* if (stiker)*/ conn.sendMessage(m.chat, buf, MessageType.sticker, { quoted: m })
    //else throw '*Kesalahan Pada Saat Mengonversi!*'
      }
-  }
-}
+        )
+        .catch(
+            (error) => {
+                console.log(error); 
+            }
+        )
+    
+    });
+    }
 handler.command = /^(ssearch)$/i
 handler.owner = false
 handler.mods = false
