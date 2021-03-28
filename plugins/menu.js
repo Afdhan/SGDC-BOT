@@ -59,6 +59,8 @@ let handler  = async (m, { conn, args, usedPrefix: _p }) => {
 *┃║ ${_p}bacotan*
 *┃║ ${_p}donasi*
 *┃║ ${_p}covid*
+*┃║ ${_p}nickepep*
+*┃║ ${_p}darkjoke*
 *┃║ ${_p}katabijak*
 *┃║ ${_p}katabucin*
 *┃║ ${_p}grouplist*
@@ -107,6 +109,7 @@ let handler  = async (m, { conn, args, usedPrefix: _p }) => {
 *┃║ ${_p}komiku* _Teks_
 *┃║ ${_p}hidetag* _Teks_
 *┃║ ${_p}base64* _Teks_
+*┃║ ${_p}decode64* _Teks_
 *┃║ ${_p}report* _Teks_
 *┃║ ${_p}google* _Teks_
 *┃║ ${_p}gimage* _Teks_
@@ -176,10 +179,12 @@ let handler  = async (m, { conn, args, usedPrefix: _p }) => {
 *┃║ ${_p}getpp* _@user_
 *┃║ ${_p}spam* _@user_
 *┃║ ${_p}jadwalsholat* _Daerah_
+*┃║ ${_p}cuaca* _Daerah_
 *┃║ ${_p}waktu* _Daerah_
 *┃║ ${_p}ninja* _Nama_
 *┃║ ${_p}artinama* _Nama_
 *┃║ ${_p}calc* _Angka_
+*┃║ ${_p}lirik* _Judul Lagu_
 *┃║ ${_p}chord* _Judul Lagu_
 *┃║ ${_p}nonton* _Judul Film_
 *┃║ ${_p}enable* _Option_
@@ -206,7 +211,7 @@ let handler  = async (m, { conn, args, usedPrefix: _p }) => {
   m.reply('Untuk Menu Gretongan, Ketik *!gretongmenu*')
 }
 
-handler.command = /^(menu|help|helep)$/i
+handler.command = /^(menu|help|start|bot|helep)$/i
 handler.owner = false
 handler.mods = false
 handler.premium = false
