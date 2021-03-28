@@ -11,8 +11,8 @@ await m.reply('*[ WAIT ]* _Sedang Diproses..._')
 axios.get(url)
       .then((result) => {
         let b = JSON.parse(JSON.stringify(result.data));
-        let cewek =  b[Math.floor(Math.random() * b.length)];
-        imageToBase64(cewek)
+        let cc =  b[Math.floor(Math.random() * b.length)];
+        imageToBase64(cc)
         .then(
             (response) => {
 	let buf = Buffer.from(response, 'base64');
