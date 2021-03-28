@@ -5,15 +5,8 @@ let handler = async (m, { conn, args }) => {
 }
 
 handler.command = new RegExp
-handler.customPrefix = /^(Kill|kill|ulti|Ulti)$/i
+handler.customPrefix = /(Kill|kill|ulti|Ulti)/i
 handler.owner = true
-handler.mods = false
-handler.premium = false
-handler.group = true
-handler.private = false
-
-handler.admin = false
-handler.botAdmin = true
 
 handler.fail = null
 
