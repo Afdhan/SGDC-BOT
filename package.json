@@ -19,16 +19,16 @@
     "whatsapp",
     "js-whatsapp"
   ],
-  "homepage": "https://github.com/Afdhan/gretong",
+  "homepage": "https://github.com/Afdhan/SGDC-BOT",
   "author": {
     "name": "M AFDHAN"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Afdhan/gretong.git"
+    "url": "https://github.com/Afdhan/SGDC-BOT.git"
   },
   "bugs": {
-    "url": "https://github.com/Afdhan/gretong/issues"
+    "url": "https://github.com/Afdhan/SGDC-BOT/issues"
   },
   "license": "GPL-3.0-or-later",
   "dependencies": {
