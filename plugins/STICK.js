@@ -1,4 +1,5 @@
 let imageToBase64 = require('image-to-base64');
+const { sticker } = require('../lib/sticker')
 let axios = require("axios");
 const fetch = require('node-fetch')
 const FormData = require('form-data')
@@ -7,27 +8,24 @@ let handler = async(m, { conn, text }) => {
 
 await m.reply('*[ WAIT ]* _Sedang Diproses..._')
 
-        let url = 'https://api.xteam.xyz/sticker/stickpack?q=' + text + '&APIKEY=abba3220ce4a347f'
+        let url = 'https://api.xteam.xyz/sticker/stickerly?q=' + text + '&APIKEY=abba3220ce4a347f'
 axios.get(url)
       .then((res) => {
-        let b = JSON.parse(JSON.stringify(res.data.result));
+        let b = JSON.parse(JSON.stringify(res.data.result.stickerlist));
         let cc =  b[Math.floor(Math.random() * b.length)];
         imageToBase64(cc)
         .then(
             (response) => {
-	let buf = Buffer.from(response, 'base64');
-    let spn = encodeURIComponent(buf)
-    conn.sendFile(m.chat, spn, 'sponge.webp', '', m, false, { asSticker: true })
-            }
-        )
-        .catch(
-            (error) => {
-                console.log(error); 
-            }
-        )
-    
-    });
-    }
+	let buf = Buffer.from(response, 'base64')
+	
+let stiker = await sticker(buf, false, global.packname, global.author)
+// let spn = encodeURIComponent(buf)
+        if (stiker) conn.sendMessage(m.chat, stiker, MessageType.sticker, {
+      quoted: m
+    })
+   else throw '*Kesalahan Pada Saat Mengonversi!*'
+  }
+}
 handler.command = /^(ssearch)$/i
 handler.owner = false
 handler.mods = false
