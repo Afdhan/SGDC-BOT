@@ -6,10 +6,10 @@ let handler = async function(m, { conn , args, isAdmin, isBotAdmin }) {
   let name = m.fromMe ? conn.user : conn.contacts[m.sender]
   let users = m.sender
 
-    conn.reply(m.chat, `*「 ANTI LINK 」*\n\nTerdeteksi *${usname}* telah mengirim link group!\n\nMaaf Kamu akan dikick oleh *[ • SGDC-BOT • ]*`, m)
+if (chat.antiLink) conn.reply(m.chat, `*「 ANTI LINK 」*\n\nTerdeteksi *${usname}* telah mengirim link group!\n\nMaaf Kamu akan dikick oleh *[ • SGDC-BOT • ]*`, m)
  await conn.groupRemove(m.chat, [users])
 }
-handler.tags = ['group']
+
 handler.customPrefix = /chat.whatsapp.com\/([0-9A-Za-z]{20,24})/i
 handler.command = new RegExp
 handler.group = true
