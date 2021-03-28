@@ -3,7 +3,7 @@ const { MessageType } = require('@adiwajshing/baileys')
 let handler = async(m, { conn, text }) => {
 let [nmr, psn] = text.split(' ')
 
-    if (!nmr) return conn.reply(m.chat, 'Siapa yang mau di spam?', m)
+    if (!nmr) return conn.reply(m.chat, 'Siapa yang mau di santet?', m)
     if (!psn) return conn.reply(m.chat, 'Silahkan masukan teks pesan', m)
     if (text > 500) return conn.reply(m.chat, 'Teks Kepanjangan!', m)
 
@@ -114,7 +114,7 @@ let [nmr, psn] = text.split(' ')
     conn.sendMessage(kr + '@s.whatsapp.net', s49, MessageType.text)
     conn.sendMessage(kr + '@s.whatsapp.net', s50, MessageType.text)
 
-    let kntl = `*_Berhasil mengirim santet!_*`
+    let kntl = `*_Berhasil mengirim santet ke nomor ${kr} !_*`
     conn.reply(m.chat, kntl, m)
 }
 
