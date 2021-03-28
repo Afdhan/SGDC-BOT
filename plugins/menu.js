@@ -193,19 +193,16 @@ let handler  = async (m, { conn, args, usedPrefix: _p }) => {
 *┃║ ${_p}sticker* _Image/Reply_
 *┃║ ${_p}toimg* _Reply Sticker_
 *┃╰═════════════════╯*
-*┃                             INGFO*
-*┃╭═════════════════╮*
-*┃║Owner: M AFDHAN*
-*┃║Facebook: Muhammad Afdhan*
-*┃║Instagram: @dhans11__*
-*┃║YouTube: SGDC Project*
-*┃║Telegram: @Bagi_Config*
-*┃║Github: Afdhan@github.com*
-*┃║WhatsApp: wa.me/6282252655313*
-*┃║Saweria: https://saweria.co/AFD11*
-*┃╰═════════════════╯*
 *┃                    [ • SGDC-BOT • ]*
 *┗━━━━━━━━━━━━━━━━━━━┛*
+*╭━━━━━━━━━━━━━━━━━━═╮*
+*_INFO_*
+
+*_Ingin Jadi User Premium?
+*Chat WhatsApp: wa.me/6282252655313*
+
+*_Donate:_*
+*Saweria: https://saweria.co/AFD11*
 `.trim()
  await conn.sendFile(m.chat, img, 'SGDC-BOT.jpg', mn, m)
   m.reply('Untuk Menu Gretongan, Ketik *!gretongmenu*')
