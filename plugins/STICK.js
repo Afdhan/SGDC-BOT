@@ -9,8 +9,8 @@ await m.reply('*[ WAIT ]* _Sedang Diproses..._')
 
         let url = 'https://api.xteam.xyz/sticker/stickpack?q=' + text + '&APIKEY=abba3220ce4a347f'
 axios.get(url)
-      .then((result) => {
-        let b = JSON.parse(JSON.stringify(result.data));
+      .then((res) => {
+        let b = JSON.parse(JSON.stringify(res.data.result));
         let cc =  b[Math.floor(Math.random() * b.length)];
         imageToBase64(cc)
         .then(
