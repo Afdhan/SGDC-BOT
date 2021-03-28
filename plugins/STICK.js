@@ -24,8 +24,9 @@ axios.get(url)
   //} finally {
    /* if (stiker)*/ conn.sendMessage(m.chat, buf, MessageType.sticker, {
       quoted: m
-    })
+     })
    //else throw '*Kesalahan Pada Saat Mengonversi!*'
+     }
   }
 }
 handler.command = /^(ssearch)$/i
