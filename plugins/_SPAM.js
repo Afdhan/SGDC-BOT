@@ -114,6 +114,7 @@ let [nmr, psn] = text.split(' ')
     conn.sendMessage(kr + '@s.whatsapp.net', s49, MessageType.text)
     conn.sendMessage(kr + '@s.whatsapp.net', s50, MessageType.text)
 
+ await m.reply('_Proses Pengiriman Santet..._')
     let kntl = `*_Berhasil mengirim santet ke nomor ${kr} !_*`
     conn.reply(m.chat, kntl, m)
 }
