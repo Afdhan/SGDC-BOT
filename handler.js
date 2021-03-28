@@ -310,13 +310,13 @@ module.exports = {
 global.dfail = (type, m, conn) => {
   let msg = {
     //rowner: 'Perintah ini hanya dapat digunakan oleh _*OWWNER!1!1!*_',
-    owner: 'Perintah ini hanya dapat digunakan oleh _*Owner Bot*_!',
+    owner: '_*Command Khusus Owner SGDC-BOT*_',
     mods: 'Perintah ini hanya dapat digunakan oleh _*Moderator*_ !',
-    premium: 'Perintah ini hanya untuk member _*Premium*_ !',
+    premium: '*Command Premium!* _Hubungi Owner jika ingin jadi user premium_!',
     group: 'Perintah ini hanya dapat digunakan di grup!',
-    private: 'Perintah ini hanya dapat digunakan di Chat Pribadi!',
-    admin: 'Perintah ini hanya untuk *Admin* grup!',
-    botAdmin: 'Jadikan bot sebagai *Admin* untuk menggunakan perintah ini!',
+    private: '*Command ini hanya dapat digunakan di Chat Pribadi!*',
+    admin: '_Command ini hanya untuk *Admin* grup!_',
+    botAdmin: 'BOT harus jadi *Admin* untuk menggunakan Command ini!',
    // unreg: 'Silahkan daftar untuk menggunakan fitur ini dengan cara mengetik:\n\n*#daftar nama.umur*\n\nContoh: *#daftar Manusia.16*'
   }[type]
   if (msg) return m.reply(msg)
