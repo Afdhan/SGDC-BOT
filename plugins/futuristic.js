@@ -15,7 +15,7 @@ conn.sendFile(m.chat, link, 'SGDC.png', 'Nihh Cukk', m)
 handler.command = /^(futur(istic)?)$/i
 handler.owner = false
 handler.mods = false
-handler.premium = false
+handler.premium = true
 handler.group = false
 handler.private = false
 

@@ -16,7 +16,7 @@ conn.reply(m.chat, hasil, m)
 handler.command = /^(otakudesu)$/i
 handler.owner = false
 handler.mods = false
-handler.premium = false
+handler.premium = true
 handler.group = false
 handler.private = false
 

@@ -10,7 +10,7 @@ conn.sendFile(m.chat, link, 'SGDC-BOT.png', 'Batues:v\n\n*[ • SGDC-BOT • ]*'
 handler.command = /^(bts|randombts|batues)$/i
 handler.owner = false
 handler.mods = false
-handler.premium = false
+handler.premium = true
 handler.group = false
 handler.private = false
 

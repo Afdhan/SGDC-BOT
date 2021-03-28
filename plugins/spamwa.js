@@ -51,12 +51,12 @@ let [nmr, psn] = text.split(' ')
 handler.command = /^(spam|spamwa)$/i
 handler.owner = false
 handler.mods = false
-handler.premium = false
-handler.group = true
+handler.premium = true
+handler.group = false
 handler.private = false
 
 handler.admin = false
-handler.botAdmin = true
+handler.botAdmin = false
 
 handler.fail = null
 handler.limit = false

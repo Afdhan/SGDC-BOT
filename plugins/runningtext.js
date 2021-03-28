@@ -8,6 +8,7 @@ let handler = async (m, { conn, text }) => {
 
 handler.command = /^run$/i
 handler.limit = false
+handler.premium = true
 
 module.exports = handler
 

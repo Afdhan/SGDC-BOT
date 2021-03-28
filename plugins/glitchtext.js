@@ -11,12 +11,11 @@ let handler = async(m, { conn, text }) => {
 
     conn.sendFile(m.chat, link, 'glitchtext.png', 'Nihh Cuk', m)
 }
-handler.help = ['glitchtext', 'glitch'].map(v => v + ' <teks|teks>')
-handler.tags = ['sticker']
-handler.command = /^(glitchtext|glitch)$/i
+
+handler.command = /^(glitchtext)$/i
 handler.owner = false
 handler.mods = false
-handler.premium = false
+handler.premium = true
 handler.group = false
 handler.private = false
 
