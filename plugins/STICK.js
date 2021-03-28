@@ -1,5 +1,8 @@
 let imageToBase64 = require('image-to-base64');
 let axios = require("axios");
+const fetch = require('node-fetch')
+const FormData = require('form-data')
+const { MessageType } = require('@adiwajshing/baileys')
 let handler = async(m, { conn, text }) => {
 
 await m.reply('*[ WAIT ]* _Sedang Diproses..._')
