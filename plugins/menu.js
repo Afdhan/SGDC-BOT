@@ -205,7 +205,10 @@ _if you violate, your account will be banned permanently!_
 *┃║ ${_p}nonton* _Judul Film_
 *┃║ ${_p}enable* _Option_
 *┃║ ${_p}disable* _Option_
-*┃║ ${_p}sticgif* _Image/Reply_ (error)
+*┃║ ${_p}fullhd* _Image/Reply_
+*┃║ ${_p}snobg* _Image/Reply_
+*┃║ ${_p}sgif2* _Video/Reply_
+*┃║ ${_p}sticgif* _Video/Reply_ (error)
 *┃║ ${_p}sticker* _Image/Reply_
 *┃║ ${_p}toimg* _Reply Sticker_
 *┃╰═════════════════╯*
