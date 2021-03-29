@@ -50,11 +50,11 @@ if (opts['big-qr'] || opts['server']) conn.on('qr', qr => generate(qr, { small: 
 if (opts['server']) conn.on('qr', qr => { global.qr = qr })
 let lastJSON = JSON.stringify(global.DATABASE.data)
 if (!opts['test']) setInterval(() => {
-  conn.logger.info('Saving Database . . .')
-  if (JSON.stringify(global.DATABASE.data) == lastJSON) conn.logger.info('Database Updated!')
+  conn.logger.info('[ • SGDC-BOT • ] Saving Database...')
+  if (JSON.stringify(global.DATABASE.data) == lastJSON) conn.logger.info('[ • SGDC-BOT • ] Database Updated!')
   else {
     global.DATABASE.save()
-    conn.logger.info('Success Saving Database . . !')
+    conn.logger.info('[ • SGDC-BOT • ] Success Database Saved!')
     lastJSON = JSON.stringify(global.DATABASE.data)
   }
 }, 60 * 1000) // Save every minute
@@ -154,7 +154,7 @@ global.reloadHandler = function () {
   return true
 }
 
-// Plugin Loader
+
 let pluginFolder = path.join(__dirname, 'plugins')
 let pluginFilter = filename => /\.js$/.test(filename)
 global.plugins = {}
@@ -194,7 +194,7 @@ process.on('exit', () => global.DATABASE.save())
 
 
 
-// Quick Test
+
 async function _quickTest() {
   let ffmpeg = spawn('ffmpeg')
   let ffmpegWebp = spawn('ffmpeg', ['-hide_banner', '-loglevel', 'error', '-filter_complex', 'color', '-frames:v', '1', '-f', 'webp', '-'])

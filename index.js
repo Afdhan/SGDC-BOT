@@ -45,7 +45,7 @@ function start(file) {
       start(file)
     })
   })
-  // console.log(p)
+
 }
 
 start('dhans.js')
