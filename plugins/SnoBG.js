@@ -5,6 +5,8 @@ const { removeBackgroundFromImageFile } = require('remove.bg')
 const { exec } = require('child_process')
 
 let handler = async (m, { conn, text, args, usedPrefix, command }) => {
+let user = global.DATABASE._data.users[m.sender]
+if (user.prems) {
   try {
 
   await m.reply('_Sedang Membuat... Mohon tunggu sekitar 1 menit_')
@@ -77,6 +79,7 @@ let handler = async (m, { conn, text, args, usedPrefix, command }) => {
           fs.unlinkSync(ranp)
           if (e) return m.reply('Ada yang Error!')
           buff = fs.readFileSync(ranw)
+
           conn.sendMessage(m.chat, buff, MessageType.sticker, { quoted: m })
         })
         // fs.unlinkSync() wah gatau gmn cara ngapusnya :/
@@ -88,19 +91,12 @@ let handler = async (m, { conn, text, args, usedPrefix, command }) => {
   } catch (e) {
     console.log(e)
   }
+    } else if (!user.prems) m.reply('*FITUR INI KHUSUS UNTUK USER PREMIUM!*'
 }
 handler.command = /^(sgif2|snobg)$/i
-handler.owner = false
-handler.mods = false
-handler.premium = true
-handler.group = false
-handler.private = false
-
-handler.admin = false
-handler.botAdmin = false
 
 handler.fail = null
-handler.limit = false
+
 
 module.exports = handler
 

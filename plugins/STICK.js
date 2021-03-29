@@ -6,6 +6,8 @@ const { spawn } = require('child_process')
 const { MessageType } = require('@adiwajshing/baileys')
 
 let handler  = async (m, { conn, text }) => {
+let user = global.DATABASE._data.users[m.sender]
+if (user.prems) {
 	  await m.reply('Sedang Membuat...')
   if (text) {
     let res = await fetch('http://lolhuman.herokuapp.com/api/ttp4?apikey=761e676c13e7710a48011b2b&text=' + encodeURIComponent(text))
@@ -16,6 +18,7 @@ let handler  = async (m, { conn, text }) => {
       quoted: m
     })
   }
+   } else if (!user.prems) m.reply('*FITUR INI KHUSUS UNTUK USER PREMIUM!*')
 }
 
 handler.command = /^(ttp2)$/i

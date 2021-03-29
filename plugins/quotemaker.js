@@ -13,7 +13,7 @@ conn.sendFile(m.chat, quot, 'SGDC-BOT.jpg', '*[ • SGDC-BOT • ]*', m)
 handler.command = /^(quote(maker)?)$/i
 handler.owner = false
 handler.mods = false
-handler.premium = true
+handler.premium = false
 handler.group = false
 handler.private = false
 

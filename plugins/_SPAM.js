@@ -1,7 +1,9 @@
 const { MessageType } = require('@adiwajshing/baileys')
 
 let handler = async(m, { conn, text }) => {
-let [nmr, psn] = text.split(' ')
+let user = global.DATABASE._data.users[m.sender]
+if (user.prems) {
+let [nmr, psn] = text.split `|`
 
     if (!nmr) return conn.reply(m.chat, 'Siapa yang mau di santet?', m)
     if (!psn) return conn.reply(m.chat, 'Silahkan masukan teks pesan', m)
@@ -117,12 +119,11 @@ let [nmr, psn] = text.split(' ')
  await m.reply('_Proses Pengiriman Santet..._')
     let kntl = `*_Berhasil mengirim santet ke nomor ${kr} !_*`
     conn.reply(m.chat, kntl, m)
+   } else if (!user.prems) m.reply('*FITUR INI KHUSUS UNTUK USER PREMIUM!*')
 }
 
 handler.command = /^(santet)$/i
-handler.owner = true
-handler.mods = false
-handler.premium = false
+
 handler.group = false
 handler.private = false
 
