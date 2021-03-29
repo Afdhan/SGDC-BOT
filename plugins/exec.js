@@ -30,12 +30,10 @@ let handler  = async (m, _2) => {
     m.exp = old
   }
 }
-handler.help = ['> ', '=> ']
-handler.tags = ['advanced']
+
 handler.customPrefix = /^=?> /
 handler.command = /(?:)/i
-handler.rowner = true
-handler.owner = false
+handler.owner = true
 handler.mods = false
 handler.premium = false
 handler.group = false
