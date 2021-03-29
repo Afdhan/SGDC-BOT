@@ -4,6 +4,7 @@ let path = require('path')
 let { spawn } = require('child_process')
 let handler  = async (m, { conn, args, usedPrefix: _p }) => {
     let name = conn.getName(m.sender)
+    let versi = 1.5.1
     let d = new Date
     let locale = 'id'
     let gmt = new Date(0).getTime() - new Date('1 January 1970').getTime()
@@ -23,26 +24,28 @@ let handler  = async (m, { conn, args, usedPrefix: _p }) => {
     let uptime = clockString(_uptime)
     let img ='src/SGDC_BOT.jpg'
     let mn = `
-*╭━━━━━━━━━━━━━━━━━━═╮*
-*_INFO_*
+*━━━━━━━━━━━━━━━━━━━━━*
+_Hey *${name}* you will using *SGDC-BOT!*_
+_before you using this features,_ 
+_please follow the rules *SGDC-BOT.*_
+_if you violate, your account will be banned permanently!_
 
-*_Ingin Jadi User Premium?_*
-*Chat WhatsApp: wa.me/6282252655313*
-*Kirim Nomer Buat Verifikasi!*
-
-*_Donate:_*
-*Saweria: https://saweria.co/AFD11*
+*Rules:*
+*> Don't Spam !!!*
+*> Don't Calling !!!*
+*> Don't Video Calls !!!*
+*━━━━━━━━━━━━━━━━━━━━━*
 *┏━━━━━━━━━━━━━━━━━━━┓*
 *┃                      [ • SGDC-BOT • ]*
 *┃╭═════════════════╮*
 *┃║ Name :        ${name}*
-*┃║ Date :           ${week}, ${date}*
-*┃║ Time :          ${time}*
+*┃║ Date :          ${week}, ${date}*
+*┃║ Time :         ${time}*
 *┃║ Uptime :      ${uptime}*
-*┃║ Version :     1.5.1*
-*┃║ Prefix :        《${_p}》*
+*┃║ Version :     ${versi}*
+*┃║ Prefix :       「 ${_p} 」*
 *┃╰═════════════════╯*
-*┃                  MENU ON SGDC-BOT*
+*┃                 MENU ON SGDC-BOT*
 *┃╭═════════════════╮*
 *┃║ ${_p}exo*
 *┃║ ${_p}bts*
@@ -61,6 +64,7 @@ let handler  = async (m, { conn, args, usedPrefix: _p }) => {
 *┃║ ${_p}waifu*
 *┃║ ${_p}sagiri*
 *┃║ ${_p}shinobu*
+*┃║ ${_p}darkjoke*
 *┃║ ${_p}owner*
 *┃║ ${_p}puitis*
 *┃║ ${_p}iqtest*
@@ -69,7 +73,6 @@ let handler  = async (m, { conn, args, usedPrefix: _p }) => {
 *┃║ ${_p}donasi*
 *┃║ ${_p}covid*
 *┃║ ${_p}nickepep*
-*┃║ ${_p}darkjoke*
 *┃║ ${_p}katabijak*
 *┃║ ${_p}katabucin*
 *┃║ ${_p}grouplist*
@@ -189,8 +192,8 @@ let handler  = async (m, { conn, args, usedPrefix: _p }) => {
 *┃║ ${_p}addprem* _@user_
 *┃║ ${_p}delprem* _@user_
 *┃║ ${_p}getpp* _@user_
-*┃║ ${_p}spam* _@userTeks_
-*┃║ ${_p}santet* _@userTeks_
+*┃║ ${_p}spam* _@user|Teks_
+*┃║ ${_p}santet* _@user|Teks_
 *┃║ ${_p}jadwalsholat* _Daerah_
 *┃║ ${_p}cuaca* _Daerah_
 *┃║ ${_p}waktu* _Daerah_
@@ -208,6 +211,8 @@ let handler  = async (m, { conn, args, usedPrefix: _p }) => {
 *┃╰═════════════════╯*
 *┃                    [ • SGDC-BOT • ]*
 *┗━━━━━━━━━━━━━━━━━━━┛*
+
+Powered by *SGDC-BOT@^1.5.1*
 `.trim()
  await conn.sendFile(m.chat, img, 'SGDC-BOT.jpg', mn, m)
   m.reply('Untuk Menu Gretongan, Ketik *!gretongmenu*')
