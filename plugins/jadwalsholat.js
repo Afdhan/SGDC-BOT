@@ -4,16 +4,21 @@ let handler = async(m, { conn, text }) => {
     if (!text) return conn.reply(m.chat, 'Silahkan masukan nama daerah', m)
 
  await m.reply('*[ WAIT ]* _Sedang diproses..._')
-axios.get(`https://api.zeks.xyz/api/jadwalsholat?apikey=apivinz&daerah=${text}`).then((res) => {
+axios.get(`http://lolhuman.herokuapp.com/api/sholat/${text}?apikey=761e676c13e7710a48011b2b`).then((res) => {
     let hasil = `
-*Nama Daerah:* ${text}
-*Shubuh:* ${res.data.data.object.Shubuh}
-*Dzuhur:* ${res.data.data.object.Dzuhur}
-*Ashar:* ${res.data.data.object.Ashr}
-*Maghrib:* ${res.data.data.object.Maghrib}
-*Isya:* ${res.data.data.object.Isya}
+*JADWAL SHOLAT*
 
-*Source:* ${res.data.source}
+*Wilayah:* _${res.data.result.wilayah}_
+*Tanggal:* _${res.data.result.tanggal}_
+*Sahur:* _${res.data.result.sahur}
+*Imsak:* _${res.data.result.imsak}_
+*Subuh:* _${res.data.result.subuh}_
+*Terbit:* _${res.data.result.terbit}_
+*Dhuha:* _${res.data.result.dhuha}_
+*Dzuhur:* _${res.data.result.dzuhur}_
+*Ashar:* _${res.data.result.ashar}_
+*Maghrib:* _${res.data.result.maghrib}_
+*Isya:* _${res.data.result.isya}_
 
 *[ • SGDC-BOT • ]*
 `.trim()
